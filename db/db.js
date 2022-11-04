@@ -1,8 +1,9 @@
 const { Sequelize } = require('sequelize');
+const path = require('path')
 
 const db = new Sequelize({
   dialect: 'sqlite',
-  storage: Path2D.join(__dirname, 'CheeseBoard.sqlite'),
+  storage: path.join(__dirname, 'CheeseBoard.sqlite'),
   logging: false
 });
 

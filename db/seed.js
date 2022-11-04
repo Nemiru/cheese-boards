@@ -1,5 +1,5 @@
-const { Board, User } = require('../models')
-const db = require('/db')
+const { Board, User, Cheese} = require('../models')
+const db = require('./db')
 
 async function seed () {
     await db.sync({
@@ -49,6 +49,10 @@ async function seed () {
         {type: "plate",
         description: "a simple alternative to the classic choice",
         rating: 4},
+        {type: "cardboard",
+        description: "not the best choice for a cheese board",
+        rating: 1
+        }
     ])
 
     await User.create([
@@ -80,3 +84,5 @@ async function seed () {
 }
 
 seed()
+
+module.exports = seed
