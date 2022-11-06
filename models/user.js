@@ -5,9 +5,7 @@ class User extends Model {}
 
 User.init({
     name: {
-        type: DataTypes.STRING,
-        primaryKey: true,
-        autoIncrement: true
+        type: DataTypes.STRING
     },
     
      email: {
@@ -18,4 +16,4 @@ User.init({
     sequelize: db
 })
 
-module.exports = User
+module.exports = { User }

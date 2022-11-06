@@ -1,5 +1,5 @@
 const db = require("../db/db")
-const { Board } = require("../models")
+const Board  = require("../models")
 
 
 

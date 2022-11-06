@@ -1,5 +1,5 @@
 const db = require("../db/db")
-const { Cheese } = require("../models")
+const  Cheese = require("../models")
 
 describe("Test creating Cheese", () => {
     beforeEach( async () => {
